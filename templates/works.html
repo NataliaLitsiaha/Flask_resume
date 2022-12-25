@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Works
+{% endblock %}
+
+{% block body %}
+
+<h1> Опыт работы:</h1>
+
+{% for el in work_experience %}
+<div class="table">
+    <p>{{el.title}}</p>
+    <p>{{el.position}}</p>
+    <p>{{el.date}}</p>
+    <p>{{el.duty}}</p>
+</div>
+{% endfor %}
+{% endblock %}
